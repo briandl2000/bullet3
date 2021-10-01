@@ -1,4 +1,4 @@
-project "Bullet"
+project "bullet3"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++11"
@@ -10,11 +10,13 @@ project "Bullet"
 	files
 	{
 		"src/**.h",
-		"src/**.cpp"
+		"src/**.cpp",
+		"include/**.h"
 	}
 
 	includedirs
 	{
+		"include",
 		"src"
 	}
 
